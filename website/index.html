@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Journal Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="udacity.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="hero">Weather Journal App</div>
+      <div class="form">
+          <label for="zip">Enter Zip code here</label>
+          <input id="zip" type="text" placeholder="enter zip code here"/>
+          <label for="feelings">How are you feeling today?</label>
+          <textarea id="feelings" placeholder="Enter your feeling..."></textarea>
+          <button id="generate" type="submit">Generate</button>
+      </div>
+      <div class="results" id="entryHolder">
+        <div class="title">Most Recent Entry</div>
+        <div class="dateResult">
+          <label for="date"></label>
+          <div id="date"></div>
+        </div>
+        <div class="tempResult">
+          <label for="temp"></label>
+          <div id="temp"></div>
+        </div>
+        <div class="contentResult">
+          <label for="content"></label>
+          <div id="content"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
